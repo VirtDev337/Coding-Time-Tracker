@@ -1,0 +1,4 @@
+#!/bin/sh
+set -e
+pkill -f "timetracker.daemon" 2>/dev/null || true
+pkill -f "timetracker.gui" 2>/dev/null || true
