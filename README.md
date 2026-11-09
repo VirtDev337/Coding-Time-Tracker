@@ -42,6 +42,15 @@ TimeTrackerv2/
 ├── setup.py                   # Setup script with CLI entry points
 ├── sample_report.pdf          # Example generated PDF report
 ├── README.md
+├── installation/
+│   ├── install.bat
+│   ├── install.sh
+│   ├── uninstall.bat
+│   └── uninstall.sh
+├── package/
+│   ├── build_deb.sh
+│   └── windows/
+│       └── TimeTracker_Setup.iss
 ├── src/
 │   └── timetracker/
 │       ├── __init__.py
@@ -60,7 +69,7 @@ TimeTrackerv2/
 │   ├── disable_linux.sh
 │   ├── disable_windows.bat
 │   ├── enable_linux.sh
-│   ├── enable_windows.bat
+│   └── enable_windows.bat
 |
 └── tests/
     ├── test_db.py             # Database & query unit tests
