@@ -36,34 +36,34 @@
 ```
 TimeTrackerv2/
 ├── assets/
-│   └── icon.jpg               # Application icon
-├── pyproject.toml             # Modern package build configuration
-├── requirements.txt           # Python dependencies
-├── setup.py                   # Setup script with CLI entry points
-├── sample_report.pdf          # Example generated PDF report
+│   └── icon.jpg                   # Application icon
+├── pyproject.toml                 # Modern package build configuration
+├── requirements.txt               # Python dependencies
+├── setup.py                       # Setup script with CLI entry points
+├── sample_report.pdf              # Example generated PDF report
 ├── README.md
 ├── installation/
-│   ├── install.bat
-│   ├── install.sh
-│   ├── uninstall.bat
-│   └── uninstall.sh
+│   ├── install.bat                # Windows installation script
+│   ├── install.sh                 # Linux installation script
+│   ├── uninstall.bat              # Windows uninstall script
+│   └── uninstall.sh               # Linux uninstall script
 ├── package/
-│   ├── build_deb.sh
+│   ├── build_deb.sh               # Linux build script
 │   └── windows/
-│       └── TimeTracker_Setup.iss
+│       └── TimeTracker_Setup.iss  # Windows executable creation script
 ├── src/
 │   └── timetracker/
 │       ├── __init__.py
-│       ├── config.py          # User settings manager (~/.codetime/config.json)
-│       ├── db.py              # SQLite storage & aggregation queries
-│       ├── window_tracker.py  # X11 active window focus & idle detection
-│       ├── file_watcher.py    # Project-scoped watchdog file observer
-│       ├── daemon.py          # Background tracking engine
-│       ├── cli.py             # Full CLI command suite
-│       ├── gui.py             # GTK3 graphical desktop application
+│       ├── config.py              # User settings manager (~/.codetime/config.json)
+│       ├── db.py                  # SQLite storage & aggregation queries
+│       ├── window_tracker.py      # X11 active window focus & idle detection
+│       ├── file_watcher.py        # Project-scoped watchdog file observer
+│       ├── daemon.py              # Background tracking engine
+│       ├── cli.py                 # Full CLI command suite
+│       ├── gui.py                 # GTK3 graphical desktop application
 │       └── reports/
 │           ├── __init__.py
-│           └── pdf_report.py  # ReportLab Platypus customizable PDF engine
+│           └── pdf_report.py      # ReportLab Platypus customizable PDF engine
 |
 ├── startup/
 │   ├── disable_linux.sh
