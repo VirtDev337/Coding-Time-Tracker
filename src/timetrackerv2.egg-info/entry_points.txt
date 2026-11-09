@@ -1,4 +1,0 @@
-[console_scripts]
-timetracker = timetracker.cli:main
-timetracker-daemon = timetracker.daemon:main
-timetracker-gui = timetracker.gui:main
