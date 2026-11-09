@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "timetrackerv2"
+version = "2.0.0"
+authors = [
+    { name = "VirtDev", email = "com.virtdev@gmail.com" }
+]
+description = "Ambient time tracker for coding in IDEs and browser research with customizable PDF reports."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "reportlab>=3.6.8",
+    "psutil>=5.9.0",
+    "watchdog>=2.1.0",
+    "Pillow>=9.0.0",
+]
+
+[project.optional-dependencies]
+gui = ["pgi>=0.0.11.2"]
+dev = ["pytest>=7.0.0"]
+
+[project.scripts]
+timetracker = "timetracker.cli:main"
+timetracker-gui = "timetracker.gui:main"
+timetracker-daemon = "timetracker.daemon:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pyright]
+reportMissingModuleSource = false
+
