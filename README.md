@@ -55,6 +55,13 @@ TimeTrackerv2/
 │       └── reports/
 │           ├── __init__.py
 │           └── pdf_report.py  # ReportLab Platypus customizable PDF engine
+|
+├── startup/
+│   ├── disable_linux.sh
+│   ├── disable_windows.bat
+│   ├── enable_linux.sh
+│   ├── enable_windows.bat
+|
 └── tests/
     ├── test_db.py             # Database & query unit tests
     ├── test_window_tracker.py # Window & browser parser unit tests
